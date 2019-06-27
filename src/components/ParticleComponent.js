@@ -19,7 +19,7 @@ export default () => (
             value: 100,
             density: {
               enable: true,
-              value_area: 1500
+              value_area: 700
             }
           },
           color: {
@@ -62,11 +62,17 @@ export default () => (
           },
           modes: {
             push: {
-              particles_nb: 1
+              particles_nb: 4
+            },
+            grab: {
+              distance: 140,
+              line_linked: {
+                opacity: 1
+              }
             }
-          }
-        },
-        retina_detect: true
+          },
+          retina_detect: true
+        }
       }}
     />
   </div>
