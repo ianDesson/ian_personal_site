@@ -11,6 +11,7 @@ To see a live build hosted by Netlify visit:
 You can contact me using the following:
 
 Email: `ian.desson@outlook.com`
+
 LinkedIn: `https://linkedin.com/in/ian-desson/`
 
 # React Stuff
@@ -76,8 +77,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # Colour Scheme
 
-Primary: #B61924
-Secondary: #2B2D42
-Tertiary: #0D1F2D
-White: #EDF2F4
-Black: #262626
+Primary: `#B61924`
+
+Secondary: `#2B2D42`
+
+Tertiary: `#0D1F2D`
+
+White: `#EDF2F4`
+
+Black: `#262626`
