@@ -10,6 +10,7 @@ import {
 const AboutMe = () => {
   return (
     <Grid
+      name="about-me"
       container
       direction="column"
       style={{ marginTop: "1em", textAlign: "center" }}
@@ -40,7 +41,7 @@ const AboutMe = () => {
             <CardMedia
               image={require("../resources/images/work.jpg")}
               title="Experience"
-              style={{ height: "300px", width: "300px", }}
+              style={{ height: "300px", width: "300px" }}
             />
             <CardContent>
               <Typography variant="h4">Experience</Typography>
