@@ -1,58 +1,26 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
-import {
-  Card,
-  CardMedia,
-  CardActionArea,
-  CardContent
-} from "@material-ui/core";
 
 const AboutMe = () => {
+  const [value, setValue] = React.useState(0);
+
+  const Tabs = () => {
+    const content = ["About", "Experience", "Projects"];
+    return content.map((text, index) => {
+      return (
+        <div onClick={() => setValue(index)} className={index === value ? 'selected' : ''}>
+          <span id="nav-text">{text}</span>
+          <div id="bottom-bar" />
+        </div>
+      );
+    });
+  };
+
   return (
-    <Grid
-      name="about-me"
-      container
-      direction="column"
-      style={{ marginTop: "1em", textAlign: "center" }}
-    >
-      <div>
-        <Typography variant="h2" style={{ fontFamily: "Raleway" }}>
-          About Me
-        </Typography>
+    <div class="about-me">
+      <div class="nav-bar">
+        <Tabs />
       </div>
-      <Grid container direction="row" justify="space-evenly">
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              image={require("../resources/images/education.jpeg")}
-              title="Education"
-              style={{ height: "300px", width: "300px" }}
-            />
-            <CardContent>
-              <Typography variant="h4">Education</Typography>
-              <Typography varaint="body1">
-                I studied at the University of Ottawa.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              image={require("../resources/images/work.jpg")}
-              title="Experience"
-              style={{ height: "300px", width: "300px" }}
-            />
-            <CardContent>
-              <Typography variant="h4">Experience</Typography>
-              <Typography variant="body1">
-                I've participated in multiple internships!
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
-    </Grid>
+    </div>
   );
 };
 

@@ -1,0 +1,44 @@
+.about-me {
+  background-color: rgba(13,31,45,0.3);
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  div {
+    color: $default-white;
+    border: none;
+    outline: none;
+    transition: color ease-in .2s;
+    cursor: pointer;
+    
+    &.selected {
+      color: $primary-color;
+      #bottom-bar {
+        width: 100%;
+      }
+    }
+    &:hover {
+      color: $primary-color;
+      #bottom-bar {
+        width: 100%;
+      }
+    }
+    &:first-child {
+      justify-self: end;
+    }
+    &:last-child {
+      justify-self: start;
+    }
+    #bottom-bar {
+      background-color: $primary-color;
+      height: 2px;
+      width: 0;
+      transition: ease .2s;
+    }
+  }
+  #nav-text {
+    font-size: 2rem;
+  }
+}

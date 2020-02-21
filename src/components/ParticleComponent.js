@@ -42,6 +42,7 @@ export default () => (
         }
       },
       interactivity: {
+        detect_on: 'window',
         events: {
           onclick: {
             enable: true,

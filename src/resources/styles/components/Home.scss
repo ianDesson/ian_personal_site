@@ -1,26 +1,19 @@
 .home {
+  padding: 2em 0 2em 0;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
 }
-.particle-effect {
-  width: 100%;
-  height: 100%;
-  background-color: $tertiary-color;
-  grid-column: 1 / 4;
-  grid-row: 1 / 4;
-}
-
 .home-text {
   z-index: 2;
-  grid-row: 2 / 3;
   grid-column: 2 / 3;
   align-self: center;
   text-align: center;
   color: $default-white;
-
+  border-radius: 10%;
+  padding: 1em;
   #name {
+    margin-top: 0;
     font-size: 3rem;
   }
 }
@@ -32,11 +25,9 @@
     margin: 0 1rem 0 1rem;
     text-decoration: none;
     cursor: pointer;
-    svg {
-
-    }
     &:hover {
       color: $primary-color;
     }
+    transition: color ease-in .2s;
   }
 }
