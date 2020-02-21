@@ -1,11 +1,11 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ac98353-5255-480e-a560-4d95c9dba03a/deploy-status)](https://app.netlify.com/sites/competent-pare-a52e62/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ac98353-5255-480e-a560-4d95c9dba03a/deploy-status)](https://app.netlify.com/sites/ian-desson/deploys)
 # About This Repo
 
 Hi, I'm Ian Desson!
 
 This is my personal portfolio site to give some background info about myself.
 
-To see a live build hosted by Netlify visit: (still needs to be added)
+To see a live build hosted by Netlify visit: https://ian-desson.netlify.com
 
 ## Contact Me
 
