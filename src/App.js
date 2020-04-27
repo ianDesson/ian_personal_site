@@ -2,7 +2,7 @@ import React from "react";
 
 import ParticleComponent from "./components/ParticleComponent";
 import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <ParticleComponent />
       <div className="content">
         <Home />
-        <AboutMe />
+        <NavBar />
       </div>
     </div>
   );
