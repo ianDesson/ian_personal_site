@@ -3,7 +3,7 @@ import React from 'react';
 const AboutMe = () => {
 
   return (
-    <div className="text-description background-gradient">
+    <div className="text-description background-gradient slide">
       I'm a software engineering student at the University of Ottawa and I expect to graduate in December 2021!
       
       <h2>💻 Technology 💻</h2>

@@ -3,7 +3,7 @@ import React from 'react';
 const Experience = () => {
 
   return (
-    <div className="text-description background-gradient">
+    <div className="text-description background-gradient slide">
       My Resume can be found here or if you want a quick overview:
 
       <h2>Field Effect Software</h2>
