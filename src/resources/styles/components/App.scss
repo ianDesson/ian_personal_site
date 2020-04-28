@@ -2,6 +2,13 @@ body {
   font-family: 'Raleway';
   background-color: $tertiary-color;
   color: $default-white;
+
+  &::-webkit-scrollbar {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    width: 12px;
+    border-radius: 10px;
+    background-color: $primary-color;
+  }
 }
 .App, .content, .particle-effect {
   position: absolute;
