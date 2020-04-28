@@ -1,15 +1,14 @@
 import React from "react";
 
-const NavBar = () => {
-  const [value, setValue] = React.useState(0);
+const NavBar = ({selectedIndex, setSelectedIndex}) => {
 
   const Tabs = () => {
     const content = ["About", "Experience", "Projects"];
     return content.map((text, index) => {
       return (
         <div
-          onClick={() => setValue(index)}
-          className={index === value ? "selected" : ""}
+          onClick={() => setSelectedIndex(index)}
+          className={index === selectedIndex ? "selected" : ""}
         >
           <span id="nav-text">{text}</span>
           <div id="bottom-bar" />
