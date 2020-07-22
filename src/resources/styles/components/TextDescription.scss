@@ -3,7 +3,9 @@
   margin: 1em auto;
   padding: 1em 1em 0.5em 1em;
   font-size: 1.2rem;
+  color: $default-black;
   transition: opacity ease-in 0.3s;
+  height: 100vh;
   &.slide {
     position: absolute;
     left: -1000px;
@@ -11,6 +13,18 @@
     -webkit-animation-delay: 0.2s;
     animation: slide 0.5s forwards;
     animation-delay: 0.2s;
+  }
+  p {
+    background-color: $default-white;
+    border-radius: 1rem;
+    padding: 1em;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  img {
+    height: 2em;
+    vertical-align: middle;
   }
 }
 

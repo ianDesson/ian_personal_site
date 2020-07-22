@@ -12,8 +12,8 @@ function App() {
   const selectedComponent = [<AboutMe />, <Experience />, <Projects />]
   return (
     <div className="App">
-      <ParticleComponent />
       <div className="content">
+        <ParticleComponent />
         <Home />
         <NavBar
           selectedIndex={selectedNavIndex}
