@@ -6,14 +6,6 @@
   color: $default-black;
   transition: opacity ease-in 0.3s;
   height: 100vh;
-  &.slide {
-    position: absolute;
-    left: -1000px;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 0.2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 0.2s;
-  }
   p {
     background-color: $default-white;
     border-radius: 1rem;
@@ -28,13 +20,3 @@
   }
 }
 
-@-webkit-keyframes slide {
-  100% {
-    left: 20%;
-  }
-}
-@keyframes slide {
-  100% {
-    left: 20%;
-  }
-}

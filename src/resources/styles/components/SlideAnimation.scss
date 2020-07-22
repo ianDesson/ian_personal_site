@@ -1,0 +1,25 @@
+.slide {
+  $leftStart: -1000px;
+  $leftEnd: 0;
+
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.2s;
+  animation: slide 0.5s forwards;
+
+  @-webkit-keyframes slide {
+    from {
+      left: $leftStart;
+    }
+    to {
+      left: $leftEnd;
+    }
+  }
+  @keyframes slide {
+    from {
+      left: $leftStart;
+    }
+    to {
+      left: $leftEnd;
+    }
+  }
+}
