@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ian Desson",
+  "name": "Ian Desson's Portfolio Site",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,20 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#B61924",
+  "background_color": "#0D1F2D",
+  "shortcuts": [
+    {
+      "name": "About Me",
+      "short_name": "About",
+      "description": "General info about me",
+      "url": "/about"
+    },
+    {
+      "name": "Experience",
+      "short_name": "Experience",
+      "description": "Description of my professional experience",
+      "url": "/experience"
+    }
+  ]
 }
