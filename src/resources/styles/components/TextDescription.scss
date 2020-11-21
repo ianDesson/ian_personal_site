@@ -7,6 +7,7 @@
   transition: opacity ease-in 0.3s;
   height: 100vh;
   p, div {
+    margin-top: 1em;
     background-color: $default-white;
     border-radius: 1rem;
     padding: 1em;

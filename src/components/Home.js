@@ -30,7 +30,7 @@ const Home = () => {
             </a>
             <br />
           </div>
-          <Button variant="contained" href="/About">
+          <Button variant="contained" href="/about">
             Let's go!
           </Button>
         </div>

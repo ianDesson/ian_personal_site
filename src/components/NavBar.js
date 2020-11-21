@@ -7,7 +7,7 @@ const NavBar = ({ selectedIndex }) => {
     const content = ["Home", "About", "Experience"];
     return content.map((text, index) => {
       return (
-        <Link to={`/${text.toLowerCase}`}>
+        <Link to={`/${text.toLowerCase()}`}>
           <div
             onClick={() => setCurrentTab(index)}
             className={index === currentTab ? "selected" : ""}
