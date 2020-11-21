@@ -4,7 +4,7 @@ import Particles from "react-particles-js";
 export default () => (
   <Particles
     className="particle-effect"
-    style={{ width: "100%", height: "100%" }}
+    style={{ width: "100%" }}
     params={{
       particles: {
         number: {
