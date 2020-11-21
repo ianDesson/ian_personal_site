@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const NavBar = ({selectedIndex, setSelectedIndex}) => {
-
+const NavBar = ({ selectedIndex }) => {
+  const [currentTab, setCurrentTab] = React.useState(selectedIndex);
   const Tabs = () => {
-    const content = ["About", "Experience", "Projects"];
+    const content = ["Home", "About", "Experience"];
     return content.map((text, index) => {
       return (
-        <div
-          onClick={() => setSelectedIndex(index)}
-          className={index === selectedIndex ? "selected" : ""}
-        >
-          <span id="nav-text">{text}</span>
-          <div id="bottom-bar" />
-        </div>
+        <Link to={`/${text}`}>
+          <div
+            onClick={() => setCurrentTab(index)}
+            className={index === currentTab ? "selected" : ""}
+          >
+            <span id="nav-text">{text}</span>
+            <div id="bottom-bar" />
+          </div>
+        </Link>
       );
     });
   };
