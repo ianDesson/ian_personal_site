@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 const NavBar = ({ selectedIndex }) => {
   const [currentTab, setCurrentTab] = React.useState(selectedIndex);
   const Tabs = () => {
@@ -10,7 +13,7 @@ const NavBar = ({ selectedIndex }) => {
         <Link to={`/${text.toLowerCase()}`}>
           <div
             onClick={() => setCurrentTab(index)}
-            className={index === currentTab ? "selected" : ""}
+            className={"tab " + (index === currentTab ? "selected" : "")}
           >
             <span id="nav-text">{text}</span>
             <div id="bottom-bar" />
@@ -22,7 +25,25 @@ const NavBar = ({ selectedIndex }) => {
 
   return (
     <div className="nav-bar">
-      <Tabs />
+      <div className="page-links">
+        <a
+          href="https://github.com/ianDesson"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHubIcon />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ian-desson/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInIcon />
+        </a>
+      </div>
+      <div className="tab-grouping">
+        <Tabs />
+      </div>
     </div>
   );
 };

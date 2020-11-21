@@ -3,23 +3,32 @@
   background-color: $tertiary-color;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   justify-items: center;
 
-  -webkit-box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.41);
-  -moz-box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.41);
-  box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.41);
+  -webkit-box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.41);
 
   a {
     text-decoration: none;
   }
-  div {
+
+  .tab-grouping {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .tab {
+    align-self: flex-end;
     color: $default-white;
     border: none;
     outline: none;
-    transition: color ease-in .2s;
+    transition: color ease-in 0.2s;
     cursor: pointer;
-    
+
     &.selected {
       color: $primary-color;
       #bottom-bar {
@@ -36,7 +45,7 @@
       background-color: $primary-color;
       height: 2px;
       width: 0;
-      transition: ease .2s;
+      transition: ease 0.2s;
     }
   }
   #nav-text {
