@@ -6,7 +6,7 @@
   color: $default-black;
   transition: opacity ease-in 0.3s;
   height: 100vh;
-  p {
+  p, div {
     background-color: $default-white;
     border-radius: 1rem;
     padding: 1em;

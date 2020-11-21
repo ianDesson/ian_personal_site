@@ -4,12 +4,19 @@ import uottawa from "../resources/images/uottawa.png";
 import nuance from "../resources/images/nuance.png";
 import cision from "../resources/images/cision.png";
 import fieldEffect from "../resources/images/fieldEffect.png";
+import resume from "../resources/ianDessonResume.pdf";
 
 const Experience = () => {
   return (
     <div className="text-description background-gradient slide">
-      My Resume can be found here or if you want a quick overview: <br />
       <p>
+        My Resume can be found{" "}
+        <a href={resume} without rel="noopener noreferrer" target="_blank">
+          here
+        </a>{" "}
+        or if you want a quick overview: <br />
+      </p>
+      <div>
         <h2>
           University of Ottawa <img src={uottawa} alt="uOttawa" />
         </h2>
@@ -19,8 +26,8 @@ const Experience = () => {
         This involved working with the Full-Stack of a web app for giving
         students accommodations for their courses and exams.
         <br />
-      </p>
-      <p>
+      </div>
+      <div>
         <h2>
           Nuance Communications <img src={nuance} alt="Nuance" />
         </h2>
@@ -36,8 +43,8 @@ const Experience = () => {
         Another project I worked on was an app for streaming files to the Mix
         REST API.
         <br />
-      </p>
-      <p>
+      </div>
+      <div>
         <h2>
           Cision Inc. <img src={cision} alt="Cision" />
         </h2>
@@ -49,8 +56,8 @@ const Experience = () => {
         <br />
         In my spare time, I also helped work on the REST API using Java.
         <br />
-      </p>
-      <p>
+      </div>
+      <div>
         <h2>
           Field Effect Software <img src={fieldEffect} alt="Field Effect" />
         </h2>
@@ -62,7 +69,7 @@ const Experience = () => {
         This meant simulating various network attacks and varifying their
         detection in the product.
         <br />
-      </p>
+      </div>
     </div>
   );
 };

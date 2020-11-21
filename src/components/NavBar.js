@@ -18,7 +18,7 @@ const NavBar = ({selectedIndex, setSelectedIndex}) => {
   };
 
   return (
-    <div class="nav-bar">
+    <div className="nav-bar">
       <Tabs />
     </div>
   );

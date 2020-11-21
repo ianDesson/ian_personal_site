@@ -7,7 +7,7 @@ const AboutMe = () => {
         I'm a software engineering student at the University of Ottawa and I
         expect to graduate in December 2021!
       </p>
-      <p>
+      <div>
         <h2>Technology</h2>
         I initially learned to code in Java during High School and have enjoyed
         using code to solve problems ever since!
@@ -21,8 +21,8 @@ const AboutMe = () => {
         I have also learned other technologies like Git, PostgreSQL, SASS,
         Docker, and Express.
         <br />
-      </p>
-      <p>
+      </div>
+      <div>
         <h2>Hobbies</h2>
         I enjoy playing video games with my friends in my spare time.
         <br />
@@ -31,8 +31,8 @@ const AboutMe = () => {
         <br />
         Lastly, I do powerlifting multiple times a week to stay in shape.
         <br />
-      </p>
-      <p>
+      </div>
+      <div>
         <h2>Languages</h2>
         I consider myself bilingual in English and French!
         <br />
@@ -42,7 +42,7 @@ const AboutMe = () => {
         During my studies, I took the DELF B2 test, which was the highest level
         of fluency for grade 12 students!
         <br />
-      </p>
+      </div>
     </div>
   );
 };
