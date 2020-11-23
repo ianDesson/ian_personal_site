@@ -5,7 +5,7 @@ Hi, I'm Ian Desson!
 
 This is my personal portfolio site to give some background info about myself.
 
-To see a live build hosted by Netlify visit: https://ian-desson.netlify.com
+To see a live build hosted by Netlify visit: https://iandesson.com
 
 ## Contact Me
 
