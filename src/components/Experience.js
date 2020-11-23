@@ -69,7 +69,7 @@ const Experience = () => {
           My main project was to create a virtual network and test the threat
           detection capabilities of Covalence.
           <br />
-          This meant simulating various network attacks and varifying their
+          This meant simulating various network attacks and verifying their
           detection in the product.
           <br />
         </div>
