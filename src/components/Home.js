@@ -3,12 +3,13 @@ import React from "react";
 import ParticleComponent from "./ParticleComponent";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import Experience from "./experience/Experience";
 import FileIcon from "@material-ui/icons/InsertDriveFile";
 import DownArrow from "@material-ui/icons/ArrowDownward";
 
 import resume from "../resources/ianDessonResume.pdf";
-import AboutMe from "./AboutMe";
+
+import AboutMe from "./aboutMe/AboutMe";
+import Experience from "./experience/Experience";
 
 const Home = () => {
   return (

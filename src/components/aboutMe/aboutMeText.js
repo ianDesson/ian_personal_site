@@ -1,12 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import Card from "./Card";
 import SchoolIcon from "@material-ui/icons/School";
 import DevicesIcon from "@material-ui/icons/Devices";
 import SportsIcon from "@material-ui/icons/SportsMotorsports";
 import LanguagesIcon from "@material-ui/icons/Language";
 
-const info = [
+const text = [
   {
     front: (
       <>
@@ -79,18 +78,4 @@ const info = [
     ),
   },
 ];
-
-const AboutMe = () => {
-  return (
-    <div>
-      <h2>About Me</h2>
-      <div className="card-grid">
-        {info.map((item) => {
-          return <Card frontContent={item.front} backContent={item.back} />;
-        })}
-      </div>
-    </div>
-  );
-};
-
-export default AboutMe;
+export default text;
