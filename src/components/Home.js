@@ -3,7 +3,10 @@ import React from "react";
 import ParticleComponent from "./ParticleComponent";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import Experience from "./Experience";
+import Experience from "./experience/Experience";
+import FileIcon from "@material-ui/icons/InsertDriveFile";
+
+import resume from "../resources/ianDessonResume.pdf";
 
 const Home = () => {
   return (
@@ -27,6 +30,9 @@ const Home = () => {
               rel="noopener noreferrer"
             >
               <LinkedInIcon />
+            </a>
+            <a href={resume} without rel="noopener noreferrer" target="_blank">
+              <FileIcon />
             </a>
             <br />
           </div>

@@ -9,8 +9,12 @@ const Card = ({ frontContent, backContent }) => {
         className={`card${isFlipped ? " flipped" : ""}`}
         onClick={() => setFlipped(!isFlipped)}
       >
-        <div className="card-face front">{frontContent}</div>
-        <div className="card-face back">{backContent}</div>
+        <div className="card-face front">
+          <span>{frontContent}</span>
+        </div>
+        <div className="card-face back">
+          <span>{backContent}</span>
+        </div>
       </div>
     </div>
   );
