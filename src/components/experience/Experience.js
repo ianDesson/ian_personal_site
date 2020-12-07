@@ -7,11 +7,9 @@ const Experience = () => {
   return (
     <div>
       <p>
-        My Resume can be found by clicking the file icon above
-        <br />
-        You can also click the cards below for a quick overview
+        You can click the cards for more info!
       </p>
-      <div className="experiences">
+      <div className="card-grid">
         {experiences.map((exp) => {
           return <Card frontContent={exp.front} backContent={exp.back} />;
         })}
