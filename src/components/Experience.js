@@ -6,12 +6,35 @@ import nuance from "../resources/images/nuance.png";
 import cision from "../resources/images/cision.png";
 import fieldEffect from "../resources/images/fieldEffect.png";
 import resume from "../resources/ianDessonResume.pdf";
+import Card from "./Card";
+
+const experiences = ["uOttawa", "Nuance", "Cision", "Field Effect"];
 
 const Experience = () => {
   return (
     <div>
-      <NavBar selectedIndex={2} />
-      <div className="text-description background-gradient slide">
+      <div>
+        <p>
+          My Resume can be found{" "}
+          <a href={resume} without rel="noopener noreferrer" target="_blank">
+            here
+          </a>{" "}
+          or if you want a quick overview: <br />
+        </p>
+      </div>
+      <div className="experience-container">
+        {experiences.map((exp) => {
+          return <Card frontContent={exp} backContent="test" />;
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Experience;
+
+{
+  /* <div className="text-description background-gradient slide">
         <p>
           My Resume can be found{" "}
           <a href={resume} without rel="noopener noreferrer" target="_blank">
@@ -74,8 +97,5 @@ const Experience = () => {
           <br />
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Experience;
+</div > */
+}

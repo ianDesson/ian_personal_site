@@ -1,0 +1,9 @@
+.experience-container {
+  width: 67%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  justify-items: center;
+}

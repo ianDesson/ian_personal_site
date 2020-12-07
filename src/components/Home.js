@@ -3,14 +3,14 @@ import React from "react";
 import ParticleComponent from "./ParticleComponent";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import Button from "@material-ui/core/Button";
+import Experience from "./Experience";
 
 const Home = () => {
   return (
     <div>
       <ParticleComponent />
-      <div className="home">
-        <div className="home-text">
+      <div className="container">
+        <div className="middle-column">
           <h1 id="name">Ian Desson</h1>
           <h1 id="title">Full Stack Developer</h1>
           <div className="page-links">
@@ -30,9 +30,7 @@ const Home = () => {
             </a>
             <br />
           </div>
-          <Button variant="contained" href="/about">
-            Let's go!
-          </Button>
+          <Experience />
         </div>
       </div>
     </div>
