@@ -1,19 +1,8 @@
-.container {
-  width: 100%;
-  padding: 2em 0 2em 0;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .middle-column {
-  margin: 0 auto;
+  margin: 10% auto;
   width: 50%;
-  z-index: 2;
   text-align: center;
   color: $default-white;
-  border-radius: 10%;
-  padding: 1em;
   #name {
     margin-top: 0;
     font-size: 3rem;
@@ -25,10 +14,6 @@
       color: $primary-color;
     }
   }
-}
-
-.landing {
-  margin: 30% 0 50%;
 }
 
 .page-links {
@@ -45,8 +30,20 @@
   }
 }
 
-#scroll-text {
-  font-size: 1em;
-  color: $default-white;
-  opacity: 0.5;
+@keyframes changeHeight {
+  from {
+    height: 10vh;
+  }
+  to {
+    height: 30vh;
+  }
+}
+
+.waves {
+  color: $default-black;
+  width: 100%;
+  position: fixed;
+  transform: rotate(180deg);
+  bottom: 0;
+  animation: 4.5s linear changeHeight infinite alternate;
 }
