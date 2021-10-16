@@ -26,24 +26,6 @@
     &:hover {
       color: $primary-color;
     }
-    transition: color ease-in .2s;
+    transition: color ease-in 0.2s;
   }
-}
-
-@keyframes changeHeight {
-  from {
-    height: 10vh;
-  }
-  to {
-    height: 30vh;
-  }
-}
-
-.waves {
-  color: $default-black;
-  width: 100%;
-  position: fixed;
-  transform: rotate(180deg);
-  bottom: 0;
-  animation: 4.5s linear changeHeight infinite alternate;
 }
